@@ -11,9 +11,7 @@ public class Order {
 	private Item itemName;
 	private String dateOrdered;
 	private List<Item> ordersItems = new ArrayList<>();
-	public Long getId() {
-		return id;
-	}
+	
 	
 	
 	
@@ -21,12 +19,12 @@ public class Order {
 		super();
 		this.setId(id);
 		this.setCustomerId(customerId);
-		this.setItemName(itemName);;
+		this.setItemName(itemName);
 		this.setDateOrdered(dateOrdered);
 	}
 	
 	public Order(Customer customerId) {
-		this.setCustomerId(customerId);;
+		this.setCustomerId(customerId);
 	}
 
 	public Order(Long id, Customer customerId) {
@@ -49,7 +47,9 @@ public class Order {
 	}
 
 
-
+	public Long getId() {
+		return id;
+	}
 	public void setId(Long id) {
 		this.id = id;
 	}
