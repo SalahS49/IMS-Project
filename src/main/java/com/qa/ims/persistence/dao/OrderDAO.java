@@ -185,4 +185,9 @@ public class OrderDAO implements Dao<Order> {
 		return new Order(id, customer, TotalPrice, customer_id, itemList);
 		
 	}
+
+	public Object deleteOrdersItems(long l) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
